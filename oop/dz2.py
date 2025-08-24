@@ -25,11 +25,11 @@ print(f'Задача №1: \n {c_b("oop/recipes.txt")}')
 #Задание №2
 print(f'Задание №2')
 
-def get_shop_list_by_dishes():
-    print('Персон:')
-    person_count = int(input())
-    print('Блюдо:')
-    dishes = input().split(', ')
+person_count = 2
+dishes = ['Омлет', 'Фахитос', 'Чай', 'Омлет']
+print(f'Персон: {person_count}')
+print(f'Блюда:\n {dishes}')
+def get_shop_list_by_dishes(person_count, dishes):
     shop_list = {}
     cook_book1 = c_b("oop/recipes.txt")
     for dish in dishes:
@@ -39,12 +39,15 @@ def get_shop_list_by_dishes():
                 qua = item['quantity'] * person_count
                 name = item['ingredient_name']
                 meas = item['measure']
-                shop_list[name] = {'measure': meas, 'quantity': qua}
+                if name in shop_list:
+                    shop_list[name]['quantity'] +=qua
+                else:
+                    shop_list[name] = {'measure': meas, 'quantity': qua}
         else:
             print(f'⚠️ Блюда "{dish}" нет в книге рецептов. ⚠️')
     return shop_list
 
-print(f'Задание №2: \n {get_shop_list_by_dishes()}')
+print(f'Список покупок: \n {get_shop_list_by_dishes(person_count, dishes)}')
 
 
 #Задание №3
