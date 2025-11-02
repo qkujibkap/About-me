@@ -1,4 +1,3 @@
-# favorites.py
 import json
 import os
 from datetime import datetime
@@ -12,9 +11,9 @@ def _ensure_file_exists():
         with open(FAVORITES_FILE, "w", encoding="utf-8") as f:
             json.dump([], f, ensure_ascii=False, indent=2)
 
-
+"Открыть файл favorites.json если нету то создать"
 def load_favorites() -> List[Dict[str, Any]]:
-    """Читает favorites.json. Если файл отсутствует — создаёт и возвращает []"""
+
     _ensure_file_exists()
     with open(FAVORITES_FILE, "r", encoding="utf-8") as f:
         try:
@@ -28,31 +27,26 @@ def load_favorites() -> List[Dict[str, Any]]:
 
 
 def save_favorites(data: List[Dict[str, Any]]) -> None:
-    """Записывает список в favorites.json"""
+
     with open(FAVORITES_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-
+"Вернуть список избранных"
 def get_favorites() -> List[Dict[str, Any]]:
-    """Возвращает список избранных"""
     return load_favorites()
 
-
+"Добавление в избранных (favorites.json)"
 def add_to_favorites(user_data: Dict[str, Any]) -> bool:
-    """
-    Добавляет пользователя в избранные.
-    user_data обязано содержать хотя бы 'id', 'first_name', 'last_name', 'profile_url', 'photos' (list).
-    Возвращает True если добавлен, False если уже был.
-    """
+
     if "id" not in user_data:
-        raise ValueError("user_data must contain 'id' field")
+        raise ValueError("Ошибка, нету 'id'")
 
     favorites = load_favorites()
     if any(u.get("id") == user_data["id"] for u in favorites):
         return False
 
     entry = user_data.copy()
-    entry["_added_at"] = datetime.utcnow().isoformat() + "Z"
+    entry["_added_at"] = datetime.now().isoformat() + "Z"
     favorites.append(entry)
     save_favorites(favorites)
     return True
