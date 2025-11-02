@@ -1,0 +1,26 @@
+[
+  {
+    "id": 4326460,
+    "first_name": "Михаил",
+    "last_name": "Синёв",
+    "profile_url": "https://vk.com/puzco",
+    "photos": [
+      "photo4326460_434740007",
+      "photo4326460_420810198",
+      "photo4326460_368876276"
+    ],
+    "_added_at": "2025-11-02T19:36:05.649979Z"
+  },
+  {
+    "id": 20386334,
+    "first_name": "Валерия",
+    "last_name": "Рытвина",
+    "profile_url": "https://vk.com/rytvina_valeriya",
+    "photos": [
+      "photo20386334_456240452",
+      "photo20386334_457244649",
+      "photo20386334_456239968"
+    ],
+    "_added_at": "2025-11-02T19:36:23.616438Z"
+  }
+]
