@@ -22,11 +22,15 @@ id пользователя для индетификации записи
 
 ## Структура файла config.py:
 
-### TOKEN_GROUP -  Токен группы
+### TOKEN_GROUP
+Токен группы
 
-### GROUP_ID - ID Группы
+### GROUP_ID
+ID Группы
 
-### TOKEN_USER - Токен пользователя
+### TOKEN_USER
+Токен пользователя
+
 ## Контакты:
 
 <a href="https://t.me/pkujibkaq">
