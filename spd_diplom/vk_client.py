@@ -6,7 +6,7 @@ class VKClient:
     def __init__(self, vk):
         self.vk = vk
 
-    # --- Поиск пользователей с offset ---
+    # --- Поиск пользователей ---
     def search_users(self, offset: int = 0) -> List[Dict[str, Any]]:
         params = SEARCH_PARAMS.copy()
         params.update({

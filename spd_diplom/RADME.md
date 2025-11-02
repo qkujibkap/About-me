@@ -3,7 +3,7 @@
 ## Файл favorites.json
 Файл для сохранения избранных
  
-    1. vk_id
+    1. id
     id пользователя для индетификации записи
 
     2. first_name, last_name
@@ -15,7 +15,7 @@
     4. photos
     Фото пользователя для визуализации пользователя
     
-    5. saved_at
+    5. _added_at
     Дата сохранения для истории
 
 ## Файл config.py:
@@ -41,9 +41,3 @@
 
 ## Файл bot.py:
 Основной код бота
-
-# Контакты:
-
-<a href="https://t.me/pkujibkaq">
-  <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram">
-</a>
