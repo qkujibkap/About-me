@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d10d144-1a26-49a8-a8fa-71b19e7978d7" name="Changes" comment="fix">
-      <change afterPath="$PROJECT_DIR$/iterator_generator/generator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newsafr.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newsafr.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readjson.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/github.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/github.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/X-Ray app/ScreenShooter/scr.py" beforeDir="false" afterPath="$PROJECT_DIR$/X-Ray app/ScreenShooter/scr.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buhgaltery/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop/dz2 copy.py" beforeDir="false" afterPath="$PROJECT_DIR$/oop/dz2 copy.py" afterDir="false" />
-    </list>
+    <list default="true" id="8d10d144-1a26-49a8-a8fa-71b19e7978d7" name="Changes" comment="fix" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -290,7 +277,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764359954856</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="fix">
+      <option name="closed" value="true" />
+      <created>1764360054492</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1764360054492</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
