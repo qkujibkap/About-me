@@ -15,7 +15,7 @@ def take_screenshot(save_dir="screenshots"):
 def listen_hotkey():
     print("Ожидание горячей клавиши Ctrl+Shift+S для скриншота...")
     keyboard.add_hotkey("ctrl+shift+s", take_screenshot)
-    keyboard.wait()  # Блокирует поток, пока не нажмешь esc или ctrl+c
+    keyboard.wait()
 
 if __name__ == "__main__":
     thread = threading.Thread(target=listen_hotkey)
